@@ -3,6 +3,7 @@
 <head>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <script type="text/javascript" src="../../turn.min.js"></script>
+<script src="jquery-1.10.2.js"></script>
 
 <style type="text/css">
 body{
@@ -13,7 +14,7 @@ body{
     margin-left:100px;
 	width:1200px;
 	height:600px;
-    
+
 }
 #magazine .turn-page{
 	background-color:#ccc;
@@ -39,10 +40,10 @@ body{
     <div style="background-image:url(pages/pg-13.jpg);"></div>
     <div style="background-image:url(pages/12.jpg);"></div>
 </div>
-    
+
  <div class="magazine">
     <div class="magazine"></div>
-    <div class="book-cover"></div>   
+    <div class="book-cover"></div>
  </div>
 
 
@@ -62,15 +63,15 @@ body{
 							}
 						});
 	});
-	
-	
+
+
 	$(window).bind('keydown', function(e){
-		
+
 		if (e.keyCode==37)
 			$('#magazine').turn('previous');
 		else if (e.keyCode==39)
 			$('#magazine').turn('next');
-			
+
 	});
 
 </script>
